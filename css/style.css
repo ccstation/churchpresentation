@@ -3,11 +3,11 @@
   font-family: 'cwTeXHei';
   font-style: normal;
   font-weight: 500;
-  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
-  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'),
-       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2) format('woff2'),
-       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'),
-       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
+  src: url(/fonts/cwTeXHei-zhonly.eot);
+  src: url(/fonts/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'),
+       url(/fonts/cwTeXHei-zhonly.woff2) format('woff2'),
+       url(/fonts/cwTeXHei-zhonly.woff) format('woff'),
+       url(/fonts/cwTeXHei-zhonly.ttf) format('truetype');
 }
 html, body { 
 	margin:0;
@@ -21,9 +21,9 @@ h1, h2, .nav-link, .playlist-btn {
 	font-family:'cwTeXHei', serif; font-weight:900;
 	text-transform:uppercase;
 }
-h1 {font-size:48px; }
+h1 {font-size:58px; }
 h1, h2, h3, p { margin:0 0 10px; color:#fff; text-shadow: 1px 1px 1px #000;}
-p { line-height:1.4; font-size:34px; }
+p { line-height:1.4; font-size:44px; }
 a { color:#fff; font-style:italic; }
 blockquote { 
 	background:#fff; 

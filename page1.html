@@ -45,13 +45,13 @@
                         changeQueue(-1);
                         break;
                     case 38: //up
-                        moveUp();
+                        moveDown();
                         break;
                     case 39: //right
                         changeQueue(1);
                         break;
                     case 40: //right
-                        moveDown();
+                        moveUp();
                         break;
                 }
             });
@@ -93,10 +93,15 @@
                     $("#item_title").text(item.title);
                     $("#item_content").html(item.content.replace(/\n/g, "<br />"));
                 
+                    if (item.titleAlign != "") {
+                        $("#item_title").css("text-align", item.titlealign);
+                    }
+                    if (item.top != "") {
+                        $('#content').css("marginTop", item.top);
+                    }
                     if (curr_back != item.background) {
                         curr_back = item.background;
                         var extension = item.background.substr( (item.background.lastIndexOf('.') +1) );
-                        console.log(extension);
                         BV.show(curr_back,{doLoop:true});
                     }
                 }
@@ -105,9 +110,7 @@
             $.getJSON( "items.json", function(data) {
                 item_arr = data.items;
                 showItem(0);
-            })            
-            
-
+            })          
             
 	    });
         
